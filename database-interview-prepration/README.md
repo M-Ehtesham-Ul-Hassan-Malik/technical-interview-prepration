@@ -67,7 +67,74 @@ For example a `student` can enroll in multiple courses, and a `course` can have 
 - faster than deletes (because it does not log each row deletion).
 - can not be rolled back.
 
+## What is a join in SQL? Name and explain different types of joins.
+### Join
+A join in sql is used to combine rows from two or more tables based on the related column between them. <br>
+There are 6 different types of joins.
+1. ### Inner Join
+- Returns only the matching rows form both tables.<br>
+`SELECT *
+FROM employees e`<br>
+`INNER JOIN departments d ON e.department_id = d.id;`
 
+2. ### Left Join (Left Outer Join)
+- Returns all rows from the left table and matching rows from right table.
+- No match return null from right side <br>
+`SELECT *
+  FROM employees e
+  LEFT JOIN departments d ON e.department_id = d.id;
+  `
+- All employees shown even if no dept
+3. ### Right Join (Right Outer Join)
+- Return all rows from the right table and matching rows from the left table.
+- No match returns null from left table.<br> 
+`SELECT *
+FROM employees e
+RIGHT JOIN departments d ON e.department_id = d.id;
+  `
+- All departments are shown even if no employee is assigned.
+4. ### Full Join (Full Outer Join)
+- Returns all rows when there is match either in left or right table.
+- non matching rows returns null.<br>
+`SELECT *
+  FROM employees e
+  FULL OUTER JOIN departments d ON e.department_id = d.id;
+  `
+- combines `left` and `right` joins.
+5. ### Cross Join
+- Returns the cartesian product.
+- every row from first table is joined with every row in second table.<br>
+`SELECT *
+  FROM employees
+  CROSS JOIN departments;
+  `
+- very large result sets!
+6. ### Self Join
+- a table is joined with itself.
+- used when the rows with in the same tables are related (employees & their managers etc)
+- to compare rows in the same table.<br>
+`SELECT a.name, b.name
+  FROM employees a
+  JOIN employees b ON a.manager_id = b.id;
+  `
+
+## What is a transaction in DBMS? What are the properties of a transaction?
+A `transaction` in DBMS is a sequence of one or more sql operations executed or performed as a single unit of work.
+- it is executed as a whole either completely or not at all, to ensure data integrity.
+- guarantees the valid state of database even error or system failures occurred.
+### Properties of transaction (ACID Properties)
+1. #### Atomicity
+- All operations with in transactions are completed successfully or none are applied.
+- No partial updates.
+2. #### Consistency
+- Transaction takes the database from one valid state to another valid state.
+- Maintaining integrity
+3. #### Isolation
+- Transactions are **independent**.
+- Not interfere other transactions when running simultaneously.
+- Intermediate results are not visible to other transactions.
+4. #### Durability 
+- Once the transaction is **commited**, the changes are **permanent**, even if the system crashes.
 
 
 
