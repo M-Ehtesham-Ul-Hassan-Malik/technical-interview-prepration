@@ -58,7 +58,7 @@ The process of simplifying complex reality by modelling classes based on the ess
 * Hide complex implementation, and shows only essential features.
 * Achieved though using Abstract classes or interfaces.
 
-## 4. What is the difference between an abstract class and an interface?
+## What is the difference between an abstract class and an interface?
 
 ### Abstract Class
 * Can have both concrete(implemented) and abstract(unimplemented) method.
