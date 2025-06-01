@@ -68,3 +68,8 @@ There are 3 types of linked list:
   - an algorithm used for multitasking operating systems where each process is assigned a fixed time slice to execute a cyclic order.
 - A Playlist
   - wrap around to the beginning after reaching the end.
+
+
+## Reference
+- [geeksforgeeks](https://www.geeksforgeeks.org/commonly-asked-data-structure-interview-questions-on-linked-list/)
+- [chatgpt](https://www.chatgpt.com/)
