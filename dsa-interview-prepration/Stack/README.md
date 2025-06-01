@@ -39,3 +39,8 @@ Stack overflow occurred when the stack exceeds its allocated memory.
 ## What is a stack underflow?
 when the stack is empty and someone attempts to pop an element
 
+
+
+## References
+- [geeksforgeeks](https://www.geeksforgeeks.org/commonly-asked-data-structure-interview-questions-on-stack/)
+- [chatgpt](https://chatgpt.com/)
