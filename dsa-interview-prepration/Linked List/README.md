@@ -27,13 +27,15 @@ There are 3 types of linked list:
   1. Singly Circular Linked List
      - Last node's `next` points to head.<br>
 
-     ![img_1.png](Singly Circular Linked List.png)
+     ![Singly Circular Linked List](Singly Circular Linked List.png)
+
 
   2. Doubly Circular Linked List
      - Last node's `next` points to head.
      - Head's `prev` points to last. <br>
-  
-       ![img.png](Doubly Circular Linked List.png)
+
+       ![Doubly Circular Linked List](Doubly Circular Linked List.png)
+
 <br>
 
 ## What are the advantages of a Linked List?
