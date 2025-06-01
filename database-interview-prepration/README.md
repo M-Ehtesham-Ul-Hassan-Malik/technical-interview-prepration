@@ -136,8 +136,37 @@ A `transaction` in DBMS is a sequence of one or more sql operations executed or 
 4. #### Durability 
 - Once the transaction is **commited**, the changes are **permanent**, even if the system crashes.
 
+## What is the difference between UNION and UNION ALL in SQL?
+### UNION
+- combine the results of two queries
+- remove duplicate rows
+- slower(because it checks for the duplicates)
+### UNION ALL
+- combine the results of two queries
+- does not remove duplicates(includes all rows)
+- faster (because no duplicate check)
+
+## What is a deadlock in DBMS? How can it be prevented?
+A **deadlock** occurs in a situation where two or more transaction are blocked because each one is waiting for other to release resources. This will lead to state where none of the transaction shall proceed.
+### Preventions Techniques
+1. #### Timeout 
+- automatically rolling back transaction if it is waiting for too long for the resources.
+2. #### Deadlock Detection
+- periodically checking for the deadlocks and abort one of the transaction to break the cycle.
+
+## What are the different types of constraints in DBMS? 
+Constraints are the rules applied to the data in database to ensure integrity and accuracy.<br>
+Some common types of constraints are:<br>
+- **NOT NULL**: Ensures that the column can not have the null value.
+- **PRIMARY KEY**: Uniquely identify each record in a table, it ensures that no duplicate and null value are allowed.
+- **FOREIGN KEY**: Ensures the referential integrity between 2 tables by linking the column in one table with the primary key of another table.
+- **UNIQUE**: Ensure that all values in the column are distinct, but it allows the null value unlike PRIMARY KEY.
+- **CHECK**: Ensure that values entered the column satisfy the column condition.
+- **DEFAULT**: Assign a default value to column if no value is provided during insertion.
+
 
 
 
 #### References
 1. [geeksforgeeks](https://www.geeksforgeeks.org/commonly-asked-dbms-interview-questions/)
+2. [chatgpt](https://chatgpt.com/)
