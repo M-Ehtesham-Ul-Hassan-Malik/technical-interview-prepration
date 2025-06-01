@@ -23,18 +23,20 @@ There are 3 types of linked list:
 
 3. #### Circular Linked List
 - Last node points to the first node, forming a circle.
-- It has 2 types:
-  1. Singly Circular Linked List
-     - Last node's `next` points to head.<br>
+  - It has 2 types:
+    1. Singly Circular Linked List
+       - Last node's `next` points to head.<br>
 
-     ![Singly Circular Linked List](Singly Circular Linked List.png)
+      ![Singly Circular Linked List](Singly%20Circular%20Linked%20List.png)
+
 
 
   2. Doubly Circular Linked List
      - Last node's `next` points to head.
      - Head's `prev` points to last. <br>
 
-       ![Doubly Circular Linked List](Doubly Circular Linked List.png)
+       ![Doubly Circular Linked List](Doubly%20Circular%20Linked%20List.png)
+
 
 <br>
 
