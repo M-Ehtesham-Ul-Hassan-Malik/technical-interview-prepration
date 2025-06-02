@@ -18,8 +18,8 @@ Linked List based queue can grow and shrink dynamically at runtime. since linked
 note: Collection framework for java also allow dynamically resizing of queue at runtime.
 
 ## What is the time complexity for enqueue and dequeue operations?
-- enqueue() : O(n)
-- dequeue() : O(n)
+- enqueue() : O(1)
+- dequeue() : O(1)
 
 ## What are the applications of a queue?
 Queue offers wide range of its application in real world scenario:
